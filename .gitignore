@@ -1,0 +1,42 @@
+# Build output
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+out/
+
+# Visual Studio cache and user-specific files
+.vs/
+*.vcxproj.user
+*.suo
+
+# Intermediate and compiler-generated files
+*.obj
+*.idb
+*.ipch
+*.iobj
+*.ipdb
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+
+# Executables and libraries
+*.exe
+*.dll
+*.lib
+
+# IntelliSense and database files
+*.sdf
+*.opensdf
+*.cachefile
+
+# CMake (if you ever use it)
+CMakeFiles/
+CMakeCache.txt
+build/
+
+# Logs
+*.log
