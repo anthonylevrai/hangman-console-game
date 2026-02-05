@@ -1,3 +1,7 @@
-slate
-crate
-boil
+anchor
+puzzle
+crimson
+lantern
+harvest
+orbit
+meadow

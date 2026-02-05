@@ -4,5 +4,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="hangman.vcxproj" />
+  <Project Path="hangman.vcxproj" Id="e5cdf7ed-f406-4399-9db6-e970a0b15137" />
 </Solution>

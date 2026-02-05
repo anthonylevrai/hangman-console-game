@@ -85,8 +85,6 @@ void printGame(int attempts) {
 bool isComplete(std::vector<char> key, std::vector<char> revealed) {
 	return revealed == key;
 }
-
-
 int main() {
 	srand(time(nullptr));
 	std::vector<std::string> words;
@@ -120,9 +118,6 @@ int main() {
 			std::cout << "\nEnter your guess here: \t";
 			std::cin >> guess;
 			checkGuess(guess, key, revealed, attempts, guesses);
-
-
-
 
 			if (attempts == 6) {
 				system("cls");
