@@ -24,14 +24,17 @@ void printRevealed(const std::vector<char>& revealed) {
 }
 void printKey(const std::vector<char>& key) {
 	for (char e : key ) {
-		std::cout << e << " ";
+		std::cout << e;
 	}
 	std::cout << std::endl;
 }
 void printUI(const int& attempts,const std::vector<char>& revealed,const std::vector<char>& guesses) {
 	printGame(attempts);
+	centerText();
 	std::cout << "Welcome to Hangman!! \n";
+	centerText();
 	std::cout << "you know the rules... \n";
+	centerText();
 	printRevealed(revealed);
 	if (!guesses.empty()) {
 		std::cout << "You have guessed: ";
@@ -60,4 +63,9 @@ bool printEndGame(int attempts,const std::vector<char>& key,const std::vector<ch
 		return 0;
 	}
 	return 1;
+}
+void centerText() {
+	for (int i = 0; i < 6;i++) {
+		std::cout << "  \t  ";
+	}
 }

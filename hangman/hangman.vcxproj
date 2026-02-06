@@ -193,7 +193,9 @@
     <ClInclude Include="WordLoader.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="files\assets\hangman0.txt" />
     <Text Include="files\assets\words.txt" />
+    <Text Include="menu.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

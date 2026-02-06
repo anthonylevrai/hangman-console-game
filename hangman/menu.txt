@@ -1,0 +1,12 @@
+						+**************************+
+						|   1. Play Hangman        |
+						|						   |
+						|   2. Change Category     |
+						|                          |
+						|   3. Change Difficulty   |
+						|                          |
+						|   4. Quit Game           |
+						|                          |
+						|                          |
+						+**************************+
+						
