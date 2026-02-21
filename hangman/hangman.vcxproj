@@ -26,6 +26,28 @@
       <Platform>ARM64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GameLogic.h" />
+    <ClInclude Include="include\Renderer.h" />
+    <ClInclude Include="include\WordLoader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GameLogic.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Renderer.cpp" />
+    <ClCompile Include="src\WordLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\ASCII\hangman0.txt" />
+    <Text Include="assets\ASCII\hangman1.txt" />
+    <Text Include="assets\ASCII\hangman2.txt" />
+    <Text Include="assets\ASCII\hangman3.txt" />
+    <Text Include="assets\ASCII\hangman4.txt" />
+    <Text Include="assets\ASCII\hangman5.txt" />
+    <Text Include="assets\ASCII\hangman6.txt" />
+    <Text Include="assets\ASCII\menu.txt" />
+    <Text Include="assets\ASCII\words.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -160,6 +182,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -181,22 +204,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="GameLogic.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Renderer.cpp" />
-    <ClCompile Include="WordLoader.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GameLogic.h" />
-    <ClInclude Include="Renderer.h" />
-    <ClInclude Include="WordLoader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="files\assets\hangman0.txt" />
-    <Text Include="files\assets\words.txt" />
-    <Text Include="menu.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
