@@ -8,6 +8,6 @@ public:
 	void showMessage(const std::string& msg) const;
 	void showEndScreen(bool won, const std::string& word) const;
 
-//private:
+private:
 	void drawHangman(int attempts) const;
 };
