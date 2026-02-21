@@ -23,7 +23,7 @@ void printRevealed(const std::vector<char>& revealed) {
 	std::cout << std::endl;
 }
 void printKey(const std::vector<char>& key) {
-	for (char e : key ) {
+	for (char e : key) {
 		std::cout << e;
 	}
 	std::cout << std::endl;

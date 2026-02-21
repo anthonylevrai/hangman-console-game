@@ -43,5 +43,11 @@
     <Text Include="files\assets\words.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="files\assets\hangman0.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="menu.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
