@@ -20,7 +20,7 @@ void Renderer::showMessage(const std::string& msg) const {
 void Renderer::showEndScreen(bool won, const std::string& word) const {
 	if (won) std::cout << "You won!\n";
 	else
-		std::cout << "You lost!\n";
+		std::cout << "You lost!\nThe word was: " << word << std::endl;
 }
 void Renderer::drawHangman(int attempts) const {
 	std::string filename = "assets/ASCII/hangman" + std::to_string(attempts) + ".txt";

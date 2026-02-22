@@ -48,6 +48,9 @@ int main() {
 				break;
 			};
 		}
+		renderer.draw(logic.getRevealed(), logic.getAttempts(), logic.getGuesses());
+		renderer.showEndScreen(logic.isWin(), word);
+
 		//play again logic
 		char in;
 		std::cout << "Would you like to play again? (Y/N): ";
@@ -56,7 +59,4 @@ int main() {
 		if ((in == 'y' || in == 'n'))
 			if (in == 'n') break;
 	}
-	renderer.draw(logic.getRevealed(), logic.getAttempts(), logic.getGuesses());
-
-	renderer.showEndScreen(logic.isWin(), word);
 }
