@@ -29,7 +29,7 @@ int main() {
 
 			char guess;
 
-			std::cout << "\nEnter guess here: \t";
+			std::cout << "\nEnter guess here: ";
 
 			std::cin >> guess;
 			GuessResult result = logic.processGuess(guess);
