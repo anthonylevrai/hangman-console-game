@@ -2,6 +2,22 @@
 #include <iostream>
 #include <fstream>
 
+void Renderer::showMainMenu() {
+	std::string filename = "assets/ASCII/menu.txt";
+	std::ifstream file(filename);
+	if (!file.is_open()) {
+		std::cerr << "Error: could not open menu file. \n";
+		return;
+	}
+	system("cls");
+	std::string line;
+	while (std::getline(file, line)) {
+		std::cout << line << "\n";
+	}
+}
+
+
+
 void Renderer::draw(const std::vector<char>& revealed, int attempts, const std::vector<char>& guesses) const {
 	drawHangman(attempts);
 
